@@ -1,3 +1,13 @@
+/* You could change the font */
+/* $baseFontFamily: Oxygen;
+@import url(http://fonts.googleapis.com/css?family=Oxygen);*/
+
+$btnPrimaryBackground: green;
+/* You could change the navbar*/
+/* $navbarBackgroundHighlight: white;*/
+/* $navbarBackground: white;*/
+
+
 @import 'bootstrap';
 
 body {
@@ -6,11 +16,16 @@ body {
 
 @import 'bootstrap-responsive';
 
+.naavbar-inner {
+	@include box-shadow(none !important);
+	border: 0;
+}
+
 .footer {
 
 	margin-top: 50px;
 	color: $grayLight;
 	a {
-		color: gray;
+		color: $gray;
 	}
 }
